@@ -1,25 +1,25 @@
 ```mermaid
 sequenceDiagram
   browser ->> server: GET 
-`https://studies.cs.helsinki.fi/exampleapp/spa`
+https://studies.cs.helsinki.fi/exampleapp/spa
   activate server
   server ->> browser: HTML document
   deactivate server
 
   browser ->> server: GET 
-`https://studies.cs.helsinki.fi/exampleapp/main.css`
+https://studies.cs.helsinki.fi/exampleapp/main.css
   server activated
   server ->> browser: CSS file
   server deactivated
 
   browser ->> server: GET 
-`https://studies.cs.helsinki.fi/exampleapp/spa.js`
+https://studies.cs.helsinki.fi/exampleapp/spa.js
   server activated
   server ->> browser: JS file
   server deactivated
 
    browser ->> server: GET 
-`https://studies.cs.helsinki.fi/exampleapp/data.json`
+https://studies.cs.helsinki.fi/exampleapp/data.json
 server activated
   server ->> browser: content [ {
         "content": "radda radda",
